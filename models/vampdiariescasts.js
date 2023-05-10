@@ -1,32 +1,32 @@
 const vampdiariescasts = [
     {
-        name:'Penn Badgley',
-        character: 'Joe Goldberg',
-        occupation: 'Bookstore Manager',
-        survives: true
-    },
-    {
-        name:'Tati Gabrielle',
-        character: 'Marienne Bellamy',
-        occupation: 'Librarian',
-        survives: true
-    },
-    {
-        name:'Lukas Gage',
-        character: 'Adam Pratt',
-        occupation: 'Gambler',
+        name:'Nina Dobrev',
+        character: 'Elena Gilbert',
+        occupation: 'Doctor',
         survives: false
     },
     {
-        name:'Amy-Leigh Hickman',
-        character: 'Nadia Farran',
-        occupation: 'Student',
+        name:'Kat Graham',
+        character: 'Bonnie Bennett',
+        occupation: 'Witch and Vampire Huntress',
         survives: true
     },
     {
-        name:'Jenna Ortega',
-        character: 'Ellie Alves',
-        occupation: 'Intern for Henderson',
+        name:'Ian Somerhalder',
+        character: 'Damon Salvatore',
+        occupation: 'Vampire/Spirit',
+        survives: false
+    },
+    {
+        name:'Paul Wesley',
+        character: 'Stefan Salvatore',
+        occupation: 'Vampire/Spiritt',
+        survives: true
+    },
+    {
+        name:'Candice King',
+        character: 'Caroline Forbes',
+        occupation: 'College Student',
         survives: true
     },
 ]

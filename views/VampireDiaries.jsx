@@ -5,7 +5,7 @@ function Index(props) {
 
     return (
         <div>
-            <h1 style={{color: "#6a040f"}}>🎥 The Vampire Diaries</h1>
+            <h1 style={{color: "#5a189a"}}>🎥 The Vampire Diaries</h1>
             <ul>
                 {vampdiariescasts.map((vampdiariescast, i) => {
                     return(

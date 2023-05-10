@@ -24,6 +24,9 @@ const prettylittleliarscasts = require('./models/prettylittleliarscasts.js');
 const vampdiariescasts = require
 ('./models/vampdiariescasts.js');
 
+const originalscasts = require
+('./models/originalscasts.js');
+
 const app = express();
 const port = 3000;
 
@@ -80,6 +83,15 @@ app.get('/vampdiariescasts', function(req,
     }); 
 
 
+    // The Originals Route
+    app.get('/originalscasts', function
+    (req,
+        res)
+        {
+            res.render('../views/TheOriginals', { 
+                originalscasts: 
+                originalscasts });
+        });     
 
 
 // Tell express to listen
