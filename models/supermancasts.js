@@ -7,7 +7,7 @@ const supermancasts = [
     },
     {
         name:'Elizabeth Tulloch',
-        character: ' Lois Lane',
+        character: 'Lois Lane',
         occupation: 'Reporter of the Smallville Gazette',
         survives: true
     },

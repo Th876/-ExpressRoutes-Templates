@@ -1,32 +1,32 @@
 const reigncasts = [
     {
         name:'Adelaine Kane',
-        character: 'Mary',
-        occupation: 'Queen of Scotland',
-        survives: true
-    },
-    {
-        name:'Elizabeth Tulloch',
-        character: ' Lois Lane',
-        occupation: 'Reporter of the Smallville Gazette',
-        survives: true
-    },
-    {
-        name:'Michele Scarabelli',
-        character: 'Martha Kent',
-        occupation: 'Farmer',
+        character: 'Mary Stuart',
+        occupation: 'Princess of Scotland',
         survives: false
     },
     {
-        name:'Emmanuelle Chriqui',
-        character: 'Lana Lang',
-        occupation: 'Mayor of Smallville',
+        name:'Toby Regbo',
+        character: 'Francis II',
+        occupation: 'King of Scotland',
+        survives: false
+    },
+    {
+        name:'Torrance Coombs',
+        character: 'Sebastian',
+        occupation: 'Druid',
         survives: true
     },
     {
-        name:'Alex Garfin',
-        character: 'Jordan Kent',
-        occupation: 'Vigilante',
+        name:'Megan Follows',
+        character: 'Catherine de\' Medici',
+        occupation: 'Queen Mother',
+        survives: true
+    },
+    {
+        name:'Rossif Sutherland',
+        character: 'Nostradamus',
+        occupation: 'Court Healer',
         survives: true
     },
 ]
