@@ -17,8 +17,6 @@ const youcasts = require('./models/youcasts.js');
 
 const riverdalecasts = require('./models/riverdalecasts.js');
 
-const annacasts = require('./models/annacasts.js');
-
 const prettylittleliarscasts = require('./models/prettylittleliarscasts.js');
 
 const vampdiariescasts = require('./models/vampdiariescasts.js');
@@ -56,32 +54,21 @@ app.get('/youcasts', function(req, res){
 }); 
 
 // Riverdale Route
-app.get('/riverdalecasts', function(req, res)
-{
+app.get('/riverdalecasts', function(req, res){
     res.render('../views/Riverdale', { 
         riverdalecasts: riverdalecasts });
 }); 
 
-//Inventing Anna Route
-app.get('/annacasts', function(req, res)
-{
-    res.render('../views/InventingAnna', { 
-        annacasts: annacasts });
-}); 
 
 //Pretty Little Liars Route
-app.get('/prettylittleliarscasts', function(req,
-    res)
-    {
+app.get('/prettylittleliarscasts', function(req,res){
         res.render('../views/PrettyLittleLiars', { 
         prettylittleliarscasts: prettylittleliarscasts });
     }); 
 
 
 // Vampire Diaries Route
-app.get('/vampdiariescasts', function(req,
-    res)
-    {
+app.get('/vampdiariescasts', function(req,res){
         res.render('../views/VampireDiaries', { 
             vampdiariescasts: vampdiariescasts });
     }); 
