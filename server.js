@@ -29,6 +29,8 @@ const supermancasts = require('./models/supermancasts.js');
 
 const reigncasts = require('./models/reigncasts.js');
 
+const screamqueenscasts = require('./models/screamqueenscasts.js');
+
 const app = express();
 const port = 3000;
 
@@ -104,7 +106,12 @@ app.get('/reigncasts', function(req,res){
         reigncasts : reigncasts });
     });     
 
-
+// Scream Queen Route
+app.get('/screamqueenscasts', function(req,
+    res){
+        res.render('../views/Scream Queens', { 
+            screamqueenscasts : screamqueenscasts });
+        });     
 
 // Tell express to listen
 app.listen(3000,() => {
