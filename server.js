@@ -27,6 +27,8 @@ const originalscasts = require('./models/originalscasts.js');
 
 const supermancasts = require('./models/supermancasts.js');
 
+const reigncasts = require('./models/reigncasts.js');
+
 const app = express();
 const port = 3000;
 
@@ -94,6 +96,15 @@ app.get('/supermancasts', function(req,res){
     res.render('../views/Superman', { 
         supermancasts: supermancasts });
     });     
+
+
+// Reign Route
+app.get('/reigncasts', function(req,res){
+    res.render('../views/Reign', { 
+        reigncasts : reigncasts });
+    });     
+
+
 
 // Tell express to listen
 app.listen(3000,() => {
