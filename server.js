@@ -21,6 +21,9 @@ const annacasts = require('./models/annacasts.js');
 
 const prettylittleliarscasts = require('./models/prettylittleliarscasts.js');
 
+const vampdiariescasts = require
+('./models/vampdiariescasts.js');
+
 const app = express();
 const port = 3000;
 
@@ -68,8 +71,13 @@ app.get('/prettylittleliarscasts', function(req,
     }); 
 
 
-
-
+// Vampire Diaries Route
+app.get('/vampdiariescasts', function(req,
+    res)
+    {
+        res.render('../views/VampireDiaries', { 
+            vampdiariescasts: vampdiariescasts });
+    }); 
 
 
 
