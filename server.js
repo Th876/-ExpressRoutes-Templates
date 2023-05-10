@@ -9,43 +9,68 @@
 
 const express = require('express');
 
-const fruits = require('./models/fruits.js');
-const vegetables = require('./models/vegetables.js');
+const mysteryonecasts = require('./models/mysteryonecasts.js');
+
+const mysterytwocasts = require('./models/mysterytwocasts.js');
+
+const youcasts = require('./models/youcasts.js');
+
+const riverdalecasts = require('./models/riverdalecasts.js');
+
+const annacasts = require('./models/annacasts.js');
+
+const prettylittleliarscasts = require('./models/prettylittleliarscasts.js');
+
 const app = express();
 const port = 3000;
 
-// Data
-// const fruits = ['apple', 'banana', 'pear'];
 
-// To spearate the rest of our module from our serve, close down the server and crate another folder called models, () mkdir; then create a file called fruits.js
-
-// Middleware here. ALWAYS PLACE MIDDLEWARE BEFORE ROUTES
+// Middleware here. 
 app.set('view engine', 'jsx');
 app.engine('jsx', require('jsx-view-engine').createEngine());
 
-// Fruits Routes here
-app.get('/fruits', function(req, res){
-    res.render('../views/fruits/Index', { fruits: fruits });
+// MurderMysteryOne Route
+app.get('/mysteryonecasts', function(req, res){
+    res.render('../views/MurderMysteryOne', { mysteryonecasts: mysteryonecasts });
 }); 
 
-// Vegetables Routes here
-app.get('/vegetables', function(req, res){
-    res.render('../views/vegetables/Index', { vegetables: vegetables });
+//MurderMysteryTwo Route
+app.get('/mysterytwocasts', function(req, res){
+    res.render('../views/MurderMysteryTwo', { mysterytwocasts: mysterytwocasts });
 }); 
 
-//add fruits show route
-app.get('/fruits/:indexOfFruitsArray', function(req, res){
-    res.render('../views/fruits/Show', { //second param must be an object
-        fruit: fruits[req.params.indexOfFruitsArray] //there will be a variable available inside the ejs file called fruit, its value is fruits[req.params.indexOfFruitsArray]
-    });
-});
+//You Route
+app.get('/youcasts', function(req, res){
+    res.render('../views/You', { 
+        youcasts: youcasts });
+}); 
 
-// add vegetables show route
-app.get('/vegetables/:indexOfVegetablesArray', function(req, res){
-    res.render('../views/vegetables/Show', { //second param must be an object
-        vegetables: vegetables[req.params.indexOfVegetablesArray] //there will be a variable available inside the ejs file called fruit, its value is fruits[req.params.indexOfFruitsArray]
-    });
-});
+// Riverdale Route
+app.get('/riverdalecasts', function(req, res)
+{
+    res.render('../views/Riverdale', { 
+        riverdalecasts: riverdalecasts });
+}); 
+
+//Inventing Anna Route
+app.get('/annacasts', function(req, res)
+{
+    res.render('../views/InventingAnna', { 
+        annacasts: annacasts });
+}); 
+
+//Pretty Little Liars Route
+app.get('/prettylittleliarscasts', function(req,
+    res)
+    {
+        res.render('../views/PrettyLittleLiars', { 
+        prettylittleliarscasts: prettylittleliarscasts });
+    }); 
+
+
+
+
+
 
 
 
