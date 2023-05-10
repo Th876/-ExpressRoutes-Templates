@@ -21,11 +21,11 @@ const annacasts = require('./models/annacasts.js');
 
 const prettylittleliarscasts = require('./models/prettylittleliarscasts.js');
 
-const vampdiariescasts = require
-('./models/vampdiariescasts.js');
+const vampdiariescasts = require('./models/vampdiariescasts.js');
 
-const originalscasts = require
-('./models/originalscasts.js');
+const originalscasts = require('./models/originalscasts.js');
+
+const supermancasts = require('./models/supermancasts.js');
 
 const app = express();
 const port = 3000;
@@ -83,16 +83,17 @@ app.get('/vampdiariescasts', function(req,
     }); 
 
 
-    // The Originals Route
-    app.get('/originalscasts', function
-    (req,
-        res)
-        {
-            res.render('../views/TheOriginals', { 
-                originalscasts: 
-                originalscasts });
-        });     
+// The Originals Route
+app.get('/originalscasts', function(req,res){
+    res.render('../views/TheOriginals', { 
+        originalscasts: originalscasts });
+    });     
 
+// Superman Route
+app.get('/supermancasts', function(req,res){
+    res.render('../views/Superman', { 
+        supermancasts: supermancasts });
+    });     
 
 // Tell express to listen
 app.listen(3000,() => {
