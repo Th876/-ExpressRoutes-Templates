@@ -1,9 +1,9 @@
 const screamqueenscasts = [
     {
-        name:'Adelaine Kane',
-        character: 'Mary Stuart',
-        occupation: 'Princess of Scotland',
-        survives: false
+        name:'Emma Roberts',
+        character: 'Chanel Oberlin',
+        occupation: 'TV Doctor',
+        survives: true
     },
     {
         name:'Keke Palmer',
@@ -12,21 +12,21 @@ const screamqueenscasts = [
         survives: true
     },
     {
-        name:'Torrance Coombs',
-        character: 'Sebastian',
-        occupation: 'Druid',
+        name:'Taylor Lautner',
+        character: 'Dr. Cassidy Cascade',
+        occupation: 'Killer',
+        survives: false
+    },
+    {
+        name:'John Stamos',
+        character: 'Dr. Brock Holt',
+        occupation: 'Killer',
         survives: true
     },
     {
-        name:'Megan Follows',
-        character: 'Catherine de\' Medici',
-        occupation: 'Queen Mother',
-        survives: true
-    },
-    {
-        name:'Rossif Sutherland',
-        character: 'Nostradamus',
-        occupation: 'Court Healer',
+        name:'Jamie Lee Curtis',
+        character: 'Cathy Munsch',
+        occupation: 'Therapist',
         survives: true
     },
 ]

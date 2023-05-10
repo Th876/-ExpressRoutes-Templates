@@ -109,7 +109,7 @@ app.get('/reigncasts', function(req,res){
 // Scream Queen Route
 app.get('/screamqueenscasts', function(req,
     res){
-        res.render('../views/Scream Queens', { 
+        res.render('../views/ScreamQueens', { 
             screamqueenscasts : screamqueenscasts });
         });     
 
